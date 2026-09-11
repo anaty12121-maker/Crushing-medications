@@ -4,7 +4,8 @@ Methylphenidate ER,Concerta,No,Immediate release methylphenidate,מנגנון OR
 Verapamil SR,Verapamil SR,No,Immediate release Verapamil,שחרור מבוקר - סכנת תת-לחץ דם וברדיקרדיה. Micromedex,FORBIDDEN_CRITICAL
 Nifedipine CR,Adalat CR,No,Liquid / Short-acting Nifedipine,שחרור מבוקר - סכנת תת-לחץ דם תסמיני. Micromedex,FORBIDDEN_CRITICAL
 Tamsulosin ER,Flomaxtra / Tamsulin ER,No,-,שחרור מבוקר - פגיעה בפרופיל השחרור ובסבילות. Micromedex,FORBIDDEN_CRITICAL
-Oxycodone ER,Oxycontin,No,Immediate release Oxycodone / Liquid,אופיאואיד בשחרור ממושך - סכנת דיכוי נשימתי קטלני. Micromedex,FORBIDDEN_CRITICAL
+Oxycodone ER,Oxycontin / Targiniq,No,Immediate release Oxycodone / Liquid,אופיאואיד בשחרור ממושך - סכנת דיכוי נשימתי קטלני. Micromedex,FORBIDDEN_CRITICAL
+Zolpidem CR,Ambien CR,No,Ambien IR,שחרור מבוקר - סכנת Dose Dumping והשפעה סדטיבית חדה. Micromedex,FORBIDDEN_CRITICAL
 Valproate Chrono,Depalept Chrono,No,Liquid / Depalept Syrup,שחרור ממושך - תנודות חדות ברמות התרופה בדם. Micromedex,FORBIDDEN_CRITICAL
 Aspirin EC,Micropirin 100mg,No,Plain Aspirin / Liquid,ציפוי אנטרי למניעת גירוי קיבה. מרוסק בפרקטיקה בעת חסר. Micromedex,ENTERIC_COATED
 Omeprazole,Losec / Gastro,No,Dispertech / Liquid,כדוריות אנטריות. ניתן לפתוח כמוסה ולערבב ברסק חומצי אך אין לכתוש כדוריות. Micromedex,ENTERIC_COATED
