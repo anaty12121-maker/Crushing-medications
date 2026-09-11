@@ -1,4 +1,25 @@
-Generic Name,Brand Name,Can Crush?,Alternative Form,Notes / Source
-Paracetamol,Acamol,Yes,Liquid / Suppository,Micromedex
-Omeprazole,Losec,No,Dispertech / Liquid,Microencapsulated pellets
-Drug X,Brand Y,missing basic information,-,Open Evidence
+Generic Name,Brand Name,Can Crush?,Alternative Form,Notes / Source,Category
+Dabigatran,Pradaxa,No,Liquid / Parenteral,הספיגה עולה ב-75% - סכנת דימום חמורה. Micromedex,FORBIDDEN_CRITICAL
+Methylphenidate ER,Concerta,No,Immediate release methylphenidate,מנגנון OROS - סכנת Dose Dumping ורעילות. Micromedex,FORBIDDEN_CRITICAL
+Verapamil SR,Verapamil SR,No,Immediate release Verapamil,שחרור מבוקר - סכנת תת-לחץ דם וברדיקרדיה. Micromedex,FORBIDDEN_CRITICAL
+Nifedipine CR,Adalat CR,No,Liquid / Short-acting Nifedipine,שחרור מבוקר - סכנת תת-לחץ דם תסמיני. Micromedex,FORBIDDEN_CRITICAL
+Tamsulosin ER,Flomaxtra / Tamsulin ER,No,-,שחרור מבוקר - פגיעה בפרופיל השחרור ובסבילות. Micromedex,FORBIDDEN_CRITICAL
+Oxycodone ER,Oxycontin,No,Immediate release Oxycodone / Liquid,אופיאואיד בשחרור ממושך - סכנת דיכוי נשימתי קטלני. Micromedex,FORBIDDEN_CRITICAL
+Valproate Chrono,Depalept Chrono,No,Liquid / Depalept Syrup,שחרור ממושך - תנודות חדות ברמות התרופה בדם. Micromedex,FORBIDDEN_CRITICAL
+Aspirin EC,Micropirin 100mg,No,Plain Aspirin / Liquid,ציפוי אנטרי למניעת גירוי קיבה. מרוסק בפרקטיקה בעת חסר. Micromedex,ENTERIC_COATED
+Omeprazole,Losec / Gastro,No,Dispertech / Liquid,כדוריות אנטריות. ניתן לפתוח כמוסה ולערבב ברסק חומצי אך אין לכתוש כדוריות. Micromedex,ENTERIC_COATED
+Lansoprazole,Zoton,No,Orally disintegrating tablet / Liquid,כדוריות מצופות ציפוי אנטרי. ניתן לפתוח כמוסה אך לא לכתוש. Micromedex,ENTERIC_COATED
+Pantoprazole,Controloc,No,IV / Liquid,ציפוי אנטרי למניעת פירוק בחומצת הקיבה. Micromedex,ENTERIC_COATED
+Duloxetine,Cymbalta,No,Liquid,כדוריות מצופות ציפוי אנטרי למניעת פירוק בחומצה. Micromedex,ENTERIC_COATED
+Bisacodyl,Laxadin,No,Suppository,ציפוי אנטרי למניעת גירוי בקיבה ופתיחה מוקדמת. Micromedex,ENTERIC_COATED
+Pregabalin,Lyrica,Yes,Liquid,בשחרור מיידי. ללא מחקר רשמי אך מקובל קלינית. Open Evidence,NO_DATA_FORMAL
+Empagliflozin,Jardiance,missing basic information,-,שחרור מיידי. סייג משפטי/לא נבדק רשמית ללא מנגנון מסוכן. Open Evidence,NO_DATA_FORMAL
+Dapagliflozin,Forxiga,missing basic information,-,שחרור מיידי. היעדר נתונים רשמיים אך ללא מנגנון מסוכן. Open Evidence,NO_DATA_FORMAL
+Ezetimibe,Ezetrol,missing basic information,-,טבליה רגילה בשחרור מיידי ללא ניסוי רשמי למתן ברסק/צינור. Open Evidence,NO_DATA_FORMAL
+Paracetamol,Acamol / Dexamol,Yes,Liquid / Suppository,שחרור מיידי - מותר לריסוק/חצייה. Micromedex,ALLOWED
+Furosemide,Fusid,Yes,Liquid / IV,טבליות רגילות בשחרור מיידי - מותר לריסוק/חצייה. Micromedex,ALLOWED
+Amlodipine,Amlodipine,Yes,Liquid,שחרור מיידי - מותר לריסוק. Micromedex,ALLOWED
+Metformin,Glucophage,Yes,Liquid,טבליות רגילות בשחרור מיידי (לא גרסת XR/Slow Release) - מותר לריסוק. Micromedex,ALLOWED
+Levothyroxine,Eltroxin / Euthyrox,Yes,Liquid / IV,מותר לריסוק ולערבוב במעט מים (לתת על קיבה ריקה). Micromedex,ALLOWED
+Digoxin,Lanoxin,Yes,Liquid / IV,שחרור מיידי - מותר לריסוק. Micromedex,ALLOWED
+Memantine,Ebixa,Yes,Liquid,שחרור מיידי - מותר לריסוק. Micromedex,ALLOWED
