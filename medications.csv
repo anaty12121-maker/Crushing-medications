@@ -1,97 +1,26 @@
-﻿Generic Name,Brand Name,Can Crush?,Category,Notes / Source
-Alfluzosin HCl,Xatral XL 10mg,No,FORBIDDEN_CRITICAL,"Modified-release tablet. Do not crush, chew or divide."
-Zolpidem Tartrate,Ambien CR,No,FORBIDDEN_CRITICAL,Controlled-release tablet. Crushing destroys controlled-release mechanism.
-Carbamazepine,Tegretol CR / Teril CR 400mg,No,FORBIDDEN_CRITICAL,Controlled-release formulation. Do not crush or chew.
-Dutasteride / Tamsulosin,Duodart 0.5mg/0.4mg,No,FORBIDDEN_CRITICAL,Do NOT crush or open. Dutasteride causes oral mucosal irritation & is absorbed transdermally. Tamsulosin is modified-release.
-Dutasteride,Avodart 0.5mg,No,FORBIDDEN_CRITICAL,Soft gelatin capsule. Contents irritate oropharyngeal mucosa; transdermal absorption risk.
-Bisacodyl,Laxadin 5mg,No,ENTERIC_COATED,Enteric-coated tablet. Crushing causes gastric irritation and premature drug release.
-Esomeprazole,Nexium 20mg/40mg,No (Tablet) / Open Only,ENTERIC_COATED,Enteric-coated pellets. Do not crush pellets. Tablets may be dispersed in non-carbonated water.
-Omeprazole,Losec / Omepra / Omepredex 20mg/40mg,No (Tablet) / Open Only,ENTERIC_COATED,Enteric-coated pellets. Do not crush pellets. Capsules may be opened and mixed with acidic juice/applesauce.
-Pantoprazole,Controloc 40mg,No,ENTERIC_COATED,"Enteric-coated tablet. Do not crush, chew, or divide."
-Aspirin (Acetylsalicylic Acid),Cartia / Micropirin / Godamed 100mg,No,ENTERIC_COATED,Enteric-coated formulation to protect gastric mucosa. Do not crush or chew.
-Pentoxifylline,Oxopurine 400mg,No,FORBIDDEN_CRITICAL,Extended-release tablet. Do not crush or chew.
-Tamsulosin,Omnic 0.4mg,No (Open capsule allowed),FORBIDDEN_CRITICAL,Modified-release pellets. Do not crush or chew pellets. Capsule may be opened and swallowed without chewing.
-Bupropion HCl,Wellbutrin XR 150mg,No,FORBIDDEN_CRITICAL,Extended-release tablet. Crushing leads to rapid absorption and severe seizure risk.
-Risedronate Sodium,Ribone 150mg,No,FORBIDDEN_CRITICAL,Bisphosphonate. Must be swallowed whole to prevent severe esophageal ulceration.
-Aledronate Sodium,Fosalan / Maxibone 70mg,No,FORBIDDEN_CRITICAL,Bisphosphonate. Crushing causes severe mucosal and esophageal irritation.
-Ferrous Sulphate,Tardyferon 80mg,No,FORBIDDEN_CRITICAL,Prolonged-release enteric-coated tablet. Crushing causes local GI ulceration.
-Paracetamol,Acamol / Abrol / Supramol 500mg,Yes,ALLOWED,Standard immediate-release tablet. Can be crushed or divided.
-Dipyrone,Optalgin / Phanalgin 500mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed or divided.
-Amlodipine,Norvasc 5mg/10mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed or split.
-Amlodipine / Valsartan,Exforge / Duplex 10/160mg,Yes,ALLOWED,Immediate-release film-coated tablet. Can be crushed if required.
-Atenolol,Normiten / Normalol 25mg/50mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed or split.
-Bisoprolol,Cardiloc / Concor 1.25mg/2.5mg/5mg/10mg,Yes,ALLOWED,Immediate-release film-coated tablet. Score line permits splitting; can be crushed.
-Furosemide,Fusid 40mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed or split.
-Spironolactone,Aldospirone 25mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed.
-Metformin HCl,Glucomin 850mg,Yes,ALLOWED,Immediate-release tablet (non-XR). Can be crushed.
-Diazepam,Assival / Valium 2mg/5mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Lorazepam,Lorivan 1mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Clonazepam,Clonex 0.5mg,Yes,ALLOWED,Scored tablet. Can be crushed or split.
-Oxazepam,Vaben 10mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed.
-Prednisone,Prednisone 20mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Baclofen,Baclosal 10mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Captopril,Capoten / Aceril 12.5mg/25mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Levothyroxine Sodium,Eltroxin / Euthyrox 50mcg/100mcg,Yes,ALLOWED,Immediate-release tablet. Can be crushed and suspended in water immediately before administration.
-Digoxin,Lanoxin 0.25mg,Yes,ALLOWED,Scored tablet. Can be crushed.
-Haloperidol,Haldol 1mg/5mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed.
-Propranolol,Deralin / Prolol 10mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed.
-Sertraline,Lustral / Serenada 50mg/100mg,Yes,ALLOWED,Film-coated immediate-release tablet. Can be crushed.
-Paroxetine,Seroxat / Paxxet 20mg,Yes,ALLOWED,Scored film-coated tablet. Can be split or crushed.
-Fluoxetine,Prizma / Flutine 20mg,Yes (Capsule open),ALLOWED,Capsule can be opened and mixed with liquids.
-Quetiapine,Seroquel 25mg/100mg,Yes,ALLOWED,Immediate-release film-coated tablet (IR formulation). Can be crushed.
-Olanzapine,Zyprexa 5mg,Yes,ALLOWED,Immediate-release film-coated tablet. Can be crushed.
-Risperidone,Risperdal 1mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Memantine HCl,Ebixa / Memox 10mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Donepezil HCl,Aricept 5mg/10mg,Yes,ALLOWED,Immediate-release film-coated tablet. Can be crushed.
-Levodopa / Carbidopa,Sinemet 200mg/50mg / Dopicar,Yes,ALLOWED,Immediate-release scored tablet (non-CR). Can be crushed.
-Apixaban,Eliquis 2.5mg/5mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed and suspended in water/applesauce.
-Clopidogrel,Plavix 75mg,Yes,ALLOWED,Film-coated tablet. Can be crushed.
-Dipyridamole,Cardoxin Forte 75mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed.
-Atorvastatin,Lipitor 10mg/20mg/40mg/80mg,Yes,ALLOWED,Film-coated immediate-release tablet. Can be crushed.
-Simvastatin,Simovil / Simvacor 20mg,Yes,ALLOWED,Film-coated tablet. Can be crushed.
-Pravastatin,Lipidal 10mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Ezetimibe,Ezetrol 10mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed.
-Ezetimibe / Atorvastatin,Atozet 10mg/80mg,Yes,ALLOWED,Immediate-release film-coated tablet. Can be crushed.
-Augmentin (Amoxicillin/Clavulanate),Augmentin 875mg,Yes,ALLOWED,Film-coated scored tablet. Can be split or crushed.
-Cephalexin,Keflex / Ceforal 250mg,Yes,ALLOWED,Immediate-release tablet/capsule. Can be crushed or opened.
-Fluconazole,Trican / Flucanol 200mg,Yes (Capsule open),ALLOWED,Capsule can be opened and mixed with food/water.
-Nitrofurantoin,Macrodantin 100mg,Yes (Capsule open),ALLOWED,Capsule can be opened and mixed with milk/food to reduce GI upset.
-Ramipril,Tritace / Ramitens 1.25mg/2.5mg/5mg,Yes,ALLOWED,Capsule can be opened / Scored tablet can be crushed.
-Candesartan,Atacand 8mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Candesartan / Hydrochlorothiazide,Candor Plus 16/12.5mg,Yes,ALLOWED,Scored tablet. Can be crushed.
-Valsartan,Diovan 160mg,Yes,ALLOWED,Immediate-release film-coated tablet. Can be crushed.
-Valsartan / Hydrochlorothiazide,Vector 160/12.5mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed.
-Dapagliflozin,Forxiga 10mg,Yes,ALLOWED,Film-coated tablet. Can be crushed.
-Empagliflozin,Jardiance 10mg/25mg,Yes,ALLOWED,Film-coated tablet. Can be crushed.
-Empagliflozin / Metformin,Jardiance Duo 5/1000mg,Yes,ALLOWED,Immediate-release film-coated tablet. Can be crushed.
-Lercanidipine,Vasodip 10mg,Yes,ALLOWED,Film-coated scored tablet. Can be split or crushed.
-Doxazosin,Cadex / Cardoral 2mg,Yes,ALLOWED,Immediate-release scored tablet (non-XL). Can be crushed.
-Clotiapine,Entumin 40mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Tramadol HCl,Tramal 50mg,Yes (Capsule open),ALLOWED,Immediate-release capsule. Can be opened and mixed with water.
-Trazodone,Trazodil 50mg/100mg,Yes,ALLOWED,Immediate-release scored tablet. Can be crushed.
-Duloxetine,Cymbalta 30mg/60mg,No (Open capsule allowed),ENTERIC_COATED,Enteric-coated pellets inside capsule. Do NOT crush pellets. Capsule may be opened and pellets sprinkled on soft acidic food without chewing.
-Pregabalin,Lyrica 50mg/75mg/100mg/150mg,Yes (Capsule open),ALLOWED,Immediate-release capsule. Capsule can be opened and dissolved in water.
-Mirtazapine,Remeron / Miro 30mg,Yes,ALLOWED,Immediate-release film-coated tablet. Can be crushed.
-Rosuvastatin,Crestor 20mg,Yes,ALLOWED,Film-coated tablet. Can be crushed.
-Ursodeoxycholic Acid,Ursolit 300mg,Yes,ALLOWED,Scored tablet. Can be crushed.
-Zopiclone,Imovane / Nocturno 3.75mg/7.5mg,Yes,ALLOWED,Film-coated scored tablet. Can be crushed (bitter taste).
-Lacosamide,Vimpat 50mg/200mg,Yes,ALLOWED,Film-coated tablet. Can be crushed.
-Levetiracetam,Keppra 250mg/50mg,Yes,ALLOWED,Film-coated scored tablet. Can be crushed.
-Brotizolam,Bondormin 0.25mg,Yes,ALLOWED,Scored tablet. Can be crushed.
-Midodrine HCl,Gutron 5mg,Yes,ALLOWED,Scored tablet. Can be crushed.
-Fludrocortisone,Florinef / Astonin 0.1mg,Yes,ALLOWED,Scored tablet. Can be crushed.
-Vortioxetine,Brintellix 10mg/20mg,Unknown,NO_DATA_FORMAL,missing basic information
-Brivaracetam,Briviact 25mg/50mg/100mg,Unknown,NO_DATA_FORMAL,missing basic information
-Brexpiprazole,Rexulti 2mg/3mg,Unknown,NO_DATA_FORMAL,missing basic information
-Mirabegron,Betmiga 25mg/50mg,Unknown,NO_DATA_FORMAL,missing basic information
-Ruxolitinib,Jakavi 5mg,Unknown,NO_DATA_FORMAL,missing basic information
-Erdosteine,Erdotin 300mg,Unknown,NO_DATA_FORMAL,missing basic information
-Acitretin,Neotigason 25mg,Unknown,NO_DATA_FORMAL,missing basic information
-Cabergoline,Cabergoline 0.5mg,Unknown,NO_DATA_FORMAL,missing basic information
-Maprotiline,Melodil 50mg,Unknown,NO_DATA_FORMAL,missing basic information
-Primidone,Prysoline 250mg,Unknown,NO_DATA_FORMAL,missing basic information
-Amiodarone,Procor 200mg,Unknown,NO_DATA_FORMAL,missing basic information
-Amantadine HCl,Paritrel 100mg,Unknown,NO_DATA_FORMAL,missing basic information
-Bezafibrate,Norlip 200mg,Unknown,NO_DATA_FORMAL,missing basic information
-Ginkgo Biloba,Cerebonin 120mg,Unknown,NO_DATA_FORMAL,missing basic information
-Doxepin,Gilex 10mg,Unknown,NO_DATA_FORMAL,missing basic information
+Generic Name,Brand Name,Can Crush?,Alternative Form,Notes / Source,Category
+Dabigatran,Pradaxa,No,Liquid / Parenteral,הספיגה עולה ב-75% - סכנת דימום חמורה. Micromedex,FORBIDDEN_CRITICAL
+Methylphenidate ER,Concerta,No,Immediate release methylphenidate,מנגנון OROS - סכנת Dose Dumping ורעילות. Micromedex,FORBIDDEN_CRITICAL
+Verapamil SR,Verapamil SR,No,Immediate release Verapamil,שחרור מבוקר - סכנת תת-לחץ דם וברדיקרדיה. Micromedex,FORBIDDEN_CRITICAL
+Nifedipine CR,Adalat CR,No,Liquid / Short-acting Nifedipine,שחרור מבוקר - סכנת תת-לחץ דם תסמיני. Micromedex,FORBIDDEN_CRITICAL
+Tamsulosin ER,Flomaxtra / Tamsulin ER,No,-,שחרור מבוקר - פגיעה בפרופיל השחרור ובסבילות. Micromedex,FORBIDDEN_CRITICAL
+Oxycodone ER,Oxycontin / Targiniq,No,Immediate release Oxycodone / Liquid,אופיאואיד בשחרור ממושך - סכנת דיכוי נשימתי קטלני. Micromedex,FORBIDDEN_CRITICAL
+Zolpidem CR,Ambien CR,No,Ambien IR,שחרור מבוקר - סכנת Dose Dumping והשפעה סדטיבית חדה. Micromedex,FORBIDDEN_CRITICAL
+Valproate Chrono,Depalept Chrono,No,Liquid / Depalept Syrup,שחרור ממושך - תנודות חדות ברמות התרופה בדם. Micromedex,FORBIDDEN_CRITICAL
+Aspirin EC,Micropirin 100mg,No,Plain Aspirin / Liquid,ציפוי אנטרי למניעת גירוי קיבה. מרוסק בפרקטיקה בעת חסר. Micromedex,ENTERIC_COATED
+Omeprazole,Losec / Gastro,No,Dispertech / Liquid,כדוריות אנטריות. ניתן לפתוח כמוסה ולערבב ברסק חומצי אך אין לכתוש כדוריות. Micromedex,ENTERIC_COATED
+Lansoprazole,Zoton,No,Orally disintegrating tablet / Liquid,כדוריות מצופות ציפוי אנטרי. ניתן לפתוח כמוסה אך לא לכתוש. Micromedex,ENTERIC_COATED
+Pantoprazole,Controloc,No,IV / Liquid,ציפוי אנטרי למניעת פירוק בחומצת הקיבה. Micromedex,ENTERIC_COATED
+Duloxetine,Cymbalta,No,Liquid,כדוריות מצופות ציפוי אנטרי למניעת פירוק בחומצה. Micromedex,ENTERIC_COATED
+Bisacodyl,Laxadin,No,Suppository,ציפוי אנטרי למניעת גירוי בקיבה ופתיחה מוקדמת. Micromedex,ENTERIC_COATED
+Pregabalin,Lyrica,Yes,Liquid,בשחרור מיידי. ללא מחקר רשמי אך מקובל קלינית. Open Evidence,NO_DATA_FORMAL
+Empagliflozin,Jardiance,missing basic information,-,שחרור מיידי. סייג משפטי/לא נבדק רשמית ללא מנגנון מסוכן. Open Evidence,NO_DATA_FORMAL
+Dapagliflozin,Forxiga,missing basic information,-,שחרור מיידי. היעדר נתונים רשמיים אך ללא מנגנון מסוכן. Open Evidence,NO_DATA_FORMAL
+Ezetimibe,Ezetrol,missing basic information,-,טבליה רגילה בשחרור מיידי ללא ניסוי רשמי למתן ברסק/צינור. Open Evidence,NO_DATA_FORMAL
+Paracetamol,Acamol / Dexamol,Yes,Liquid / Suppository,שחרור מיידי - מותר לריסוק/חצייה. Micromedex,ALLOWED
+Furosemide,Fusid,Yes,Liquid / IV,טבליות רגילות בשחרור מיידי - מותר לריסוק/חצייה. Micromedex,ALLOWED
+Amlodipine,Amlodipine,Yes,Liquid,שחרור מיידי - מותר לריסוק. Micromedex,ALLOWED
+Metformin,Glucophage,Yes,Liquid,טבליות רגילות בשחרור מיידי (לא גרסת XR/Slow Release) - מותר לריסוק. Micromedex,ALLOWED
+Levothyroxine,Eltroxin / Euthyrox,Yes,Liquid / IV,מותר לריסוק ולערבוב במעט מים (לתת על קיבה ריקה). Micromedex,ALLOWED
+Digoxin,Lanoxin,Yes,Liquid / IV,שחרור מיידי - מותר לריסוק. Micromedex,ALLOWED
+Memantine,Ebixa,Yes,Liquid,שחרור מיידי - מותר לריסוק. Micromedex,ALLOWED
