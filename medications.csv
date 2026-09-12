@@ -1,4 +1,7 @@
 ﻿Generic Name,Brand Name,Can Crush?,Category,Notes / Source
+Linagliptin,Trajenta 5mg,Yes,ALLOWED,Immediate-release tablet. Can be crushed or split.
+Sitagliptin,Januvia 25mg/50mg/100mg,Yes,ALLOWED,Film-coated immediate-release tablet. Can be crushed.
+Sitagliptin / Metformin HCl,Janumet / Janumet XR 50/800mg / 50/1000mg,Depends on formulation,ENTERIC_COATED,Janumet IR (film-coated) can be crushed if necessary. Janumet XR (extended-release) MUST NOT be crushed or chewed.
 Alfluzosin HCl,Xatral XL 10mg,No,FORBIDDEN_CRITICAL,"Modified-release tablet. Do not crush, chew or divide."
 Zolpidem Tartrate,Ambien CR,No,FORBIDDEN_CRITICAL,Controlled-release tablet. Crushing destroys controlled-release mechanism.
 Carbamazepine,Tegretol CR / Teril CR 400mg,No,FORBIDDEN_CRITICAL,Controlled-release formulation. Do not crush or chew.
