@@ -1,39 +1,51 @@
-import pandas as pd
 import streamlit as st
+import pandas as pd
 
-st.set_page_config(page_title="בדיקת כתישת תרופות", layout="centered")
+st.set_page_config(
+    page_title="מנוע חיפוש כתישת תרופות",
+    page_icon="💊",
+    layout="centered"
+)
 
-st.title("💊 בדיקת אפשרות לכתישה/ריסוק תרופות")
-
-# טעינת נתונים
-@st.cache_data
+@st.cache_data(ttl=60)
 def load_data():
-    return pd.read_csv("medications.csv")
+    url = "https://raw.githubusercontent.com/anaty12121-maker/Crushing-medications/main/medications.csv"
+    df = pd.read_csv(url)
+    return df
+
+st.title("💊 מנוע חיפוש והנחיות לכתישת תרופות")
 
 try:
     df = load_data()
-    search = st.text_input("הקלידי שם תרופה (גנרי או מסחרי):")
-
-    if search:
-        results = df[df['Generic Name'].str.contains(search, case=False, na=False) | 
-                     df['Brand Name'].str.contains(search, case=False, na=False)]
+    search_query = st.text_input("הקלידי שם תרופה (מסחרי או גנרי):", "")
+    
+    if search_query:
+        results = df[
+            df['Brand Name'].str.contains(search_query, case=False, na=False) |
+            df['Generic Name'].str.contains(search_query, case=False, na=False)
+        ]
         
         if not results.empty:
             for _, row in results.iterrows():
-                st.subheader(f"{row['Brand Name']} ({row['Generic Name']})")
-                
-                status = row['Can Crush?']
-                if status == "Yes":
-                    st.success("✅ מותר לרסק")
-                elif status == "No":
-                    st.error("❌ אסור לרסק")
+                category = row.get('Category', '')
+                if category == 'FORBIDDEN_CRITICAL':
+                    st.error(f"❌ **{row['Brand Name']}** ({row['Generic Name']})\n\n**אסור לכתוש!**\n\nהערות: {row['Notes / Source']}")
+                elif category == 'ENTERIC_COATED':
+                    st.warning(f"⚠️ **{row['Brand Name']}** ({row['Generic Name']})\n\n**ציפוי אנטרי / פתיחה בלבד**\n\nהערות: {row['Notes / Source']}")
+                elif category == 'ALLOWED':
+                    st.success(f"✅ **{row['Brand Name']}** ({row['Generic Name']})\n\n**מותר לכתוש**\n\nהערות: {row['Notes / Source']}")
                 else:
-                    st.warning("⚠️ missing basic information")
-                
-                st.write(f"**חלופות:** {row.get('Alternative Form', 'אין')}")
-                st.write(f"**הערות ומקור:** {row.get('Notes / Source', '-')}")
-                st.markdown("---")
+                    st.info(f"ℹ️ **{row['Brand Name']}** ({row['Generic Name']})\n\n**מידע:** {row['Notes / Source']}")
         else:
-            st.info("missing basic information")
+            st.warning("לא נמצאו תרופות התואמות את החיפוש.")
+            
 except Exception as e:
-    st.error("יש להעלות קובץ נתונים תקין.")
+    st.error("אירעה שגיאה בטעינת המידע.")
+
+st.markdown("---")
+st.markdown(
+    "<div style='text-align: center; color: gray; font-size: 0.9em;'>"
+    "נבנה ועובד קלינית על ידי ענת יהלום, רוקחת בבתי אבות | סיוע בפיתוח טכני: AI"
+    "</div>",
+    unsafe_allow_html=True
+)
