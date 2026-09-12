@@ -1,5 +1,6 @@
 Generic Name,Brand Name,Can Crush?,Category,Notes / Source
 Dabigatran Etexilate,Pradaxa 75mg/110mg/150mg,No,FORBIDDEN_CRITICAL,"DO NOT open, crush, or chew capsules. Bioavailability increases by 75% when capsule is opened, significantly increasing hemorrhage risk. (Micromedex / Open Evidence)"
+Pyridostigmine Bromide,Mestinon 60mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed or split for immediate administration (bitter taste). (Micromedex / Open Evidence)"
 Linagliptin,Trajenta 5mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed or split. (Micromedex)"
 Sitagliptin,Januvia 25mg/50mg/100mg,Yes,ALLOWED,"Film-coated immediate-release tablet. Can be crushed. (Micromedex)"
 Sitagliptin / Metformin HCl,Janumet / Janumet XR 50/800mg / 50/1000mg,Depends on formulation,ENTERIC_COATED,"Janumet IR (film-coated) can be crushed if necessary. Janumet XR (extended-release) MUST NOT be crushed or chewed. (Micromedex)"
