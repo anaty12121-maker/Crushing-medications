@@ -16,16 +16,25 @@ def load_data():
 
 def search_moh_api(query):
     """
-    שאילתה מורחבת ל-API הממשלתי (data.gov.il) הפונה גם לחיפוש כללי 
-    וגם לחיפוש לפי שדות חומר פעיל ושם מסחרי
+    שאילתה מוגנת ומורחבת ל-API הממשלתי (data.gov.il)
+    כוללת כותרת User-Agent למניעת חסימת דפדפן וחיפוש מרובה שדות
     """
     api_url = "https://data.gov.il/api/3/action/datastore_search"
     resource_id = "36bf15b0-30b0-4973-a2ab-323871239c3e" 
     clean_query = query.strip().upper()
     
-    # 1. ניסיון חיפוש חופשי
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+    }
+    
+    # 1. ניסיון חיפוש כללי כולל כוכבית לחיפוש חלקי
     try:
-        res = requests.get(api_url, params={"resource_id": resource_id, "q": clean_query, "limit": 10}, timeout=4)
+        res = requests.get(
+            api_url, 
+            params={"resource_id": resource_id, "q": clean_query, "limit": 10}, 
+            headers=headers,
+            timeout=5
+        )
         if res.status_code == 200:
             records = res.json().get("result", {}).get("records", [])
             if records:
@@ -33,10 +42,14 @@ def search_moh_api(query):
     except Exception:
         pass
 
-    # 2. ניסיון חיפוש ממוקד במידה וחיפוש חופשי לא החזיר תוצאה
+    # 2. ניסיון חיפוש ממוקד במידה וחיפוש כללי נכשל
     try:
-        filters = f'{{"DRUG_GENERIC_NAME": "{clean_query}"}}'
-        res = requests.get(api_url, params={"resource_id": resource_id, "filters": filters, "limit": 10}, timeout=4)
+        res = requests.get(
+            api_url, 
+            params={"resource_id": resource_id, "q": f"{clean_query}*", "limit": 10}, 
+            headers=headers,
+            timeout=5
+        )
         if res.status_code == 200:
             records = res.json().get("result", {}).get("records", [])
             if records:
