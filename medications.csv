@@ -1,7 +1,7 @@
 Generic Name,Brand Name,Can Crush?,Category,Notes / Source
 Dabigatran Etexilate,Pradaxa 75mg/110mg/150mg,No,FORBIDDEN_CRITICAL,"DO NOT open, crush, or chew capsules. Bioavailability increases by 75% when capsule is opened, significantly increasing hemorrhage risk. (Micromedex / Open Evidence)"
-Pyridostigmine Bromide,Mestinon 60mg / מסטינון 60 מ"ג,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed or split. Bitter taste. (Micromedex / Open Evidence)"
-Pyridostigmine Bromide,Mestinon Timespan / SR 180mg / מסטינון 180 מ"ג,No,FORBIDDEN_CRITICAL,"Extended-release tablet. DO NOT crush or chew; destroys slow-release mechanism and risks cholinergic crisis. (Micromedex / Open Evidence)"
+Pyridostigmine Bromide,Mestinon 60mg / מסטינון 60 מג,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed or split. Bitter taste. (Micromedex / Open Evidence)"
+Pyridostigmine Bromide,Mestinon Timespan / SR 180mg / מסטינון 180 מג,No,FORBIDDEN_CRITICAL,"Extended-release tablet. DO NOT crush or chew; destroys slow-release mechanism and risks cholinergic crisis. (Micromedex / Open Evidence)"
 Sitagliptin / Metformin HCl,Januet / Janumet / Janumet XR / גנואט,Depends on formulation,ENTERIC_COATED,"Janumet IR (film-coated) can be crushed if necessary. Janumet XR (extended-release) MUST NOT be crushed or chewed. (Micromedex / Open Evidence)"
 Linagliptin,Trajenta 5mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed or split. (Micromedex)"
 Sitagliptin,Januvia 25mg/50mg/100mg / גנוביה,Yes,ALLOWED,"Film-coated immediate-release tablet. Can be crushed. (Micromedex)"
