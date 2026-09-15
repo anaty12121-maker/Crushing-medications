@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import requests
 
 st.set_page_config(
     page_title="מנוע חיפוש כתישת תרופות",
@@ -13,34 +14,82 @@ def load_data():
     df = pd.read_csv(url)
     return df
 
+def search_moh_api(query):
+    """
+    שאילתה מורחבת ל-API הממשלתי (data.gov.il) עם המרה ל-UPPERCASE
+    וחיפוש גמיש בשדות השונים כדי להבטיח שליפה מלאה
+    """
+    api_url = "https://data.gov.il/api/3/action/datastore_search"
+    resource_id = "36bf15b0-30b0-4973-a2ab-323871239c3e" 
+    
+    clean_query = query.strip().upper()
+    
+    # ניסיון 1: חיפוש טקסט חופשי כללי בשרת הממשלתי
+    params = {
+        "resource_id": resource_id,
+        "q": clean_query,
+        "limit": 5
+    }
+    
+    try:
+        response = requests.get(api_url, params=params, timeout=5)
+        if response.status_code == 200:
+            records = response.json().get("result", {}).get("records", [])
+            if records:
+                return records
+    except Exception:
+        pass
+
+    return []
+
 st.title("💊 מנוע חיפוש והנחיות לכתישת תרופות")
 
 try:
     df = load_data()
-    search_query = st.text_input("הקלידי שם תרופה (מסחרי או גנרי):", "")
+    search_query = st.text_input("הקלידי שם תרופה (מסחרי או גנרי):", "").strip()
     
     if search_query:
+        # 1. חיפוש במאגר המאומת המקומי (medications.csv)
         results = df[
-            df['Brand Name'].str.contains(search_query, case=False, na=False) |
-            df['Generic Name'].str.contains(search_query, case=False, na=False)
+            df['Brand Name'].astype(str).str.contains(search_query, case=False, na=False) |
+            df['Generic Name'].astype(str).str.contains(search_query, case=False, na=False)
         ]
         
         if not results.empty:
             for _, row in results.iterrows():
-                category = row.get('Category', '')
-                notes = row.get('Notes / Source', 'missing basic information')
+                category = str(row.get('Category', '')).strip()
+                notes = str(row.get('Notes / Source', 'missing basic information')).strip()
+                brand = row['Brand Name']
+                generic = row['Generic Name']
                 
                 if category == 'FORBIDDEN_CRITICAL':
-                    st.error(f"❌ **{row['Brand Name']}** ({row['Generic Name']})\n\n**אסור לכתוש!**\n\n**הנחיות ומקור:** {notes}")
+                    st.error(f"❌ **{brand}** ({generic})\n\n**אסור לכתוש!**\n\n**הנחיות ומקור:** {notes}")
                 elif category == 'ENTERIC_COATED':
-                    st.warning(f"⚠️ **{row['Brand Name']}** ({row['Generic Name']})\n\n**ציפוי אנטרי / פתיחה בלבד**\n\n**הנחיות ומקור:** {notes}")
+                    st.warning(f"⚠️ **{brand}** ({generic})\n\n**ציפוי אנטרי / פתיחה בלבד**\n\n**הנחיות ומקור:** {notes}")
                 elif category == 'ALLOWED':
-                    st.success(f"✅ **{row['Brand Name']}** ({row['Generic Name']})\n\n**מותר לכתוש**\n\n**הנחיות ומקור:** {notes}")
+                    st.success(f"✅ **{brand}** ({generic})\n\n**מותר לכתוש**\n\n**הנחיות ומקור:** {notes}")
                 else:
-                    st.info(f"ℹ️ **{row['Brand Name']}** ({row['Generic Name']})\n\n**מידע:** {notes}")
+                    st.info(f"ℹ️ **{brand}** ({generic})\n\n**מידע:** {notes}")
         else:
-            st.warning("missing basic information (התרופה לא נמצאה במאגר)")
+            # 2. שליפה אוטומטית ממאגר משרד הבריאות במידה ולא נמצא ב-CSV
+            moh_records = search_moh_api(search_query)
             
+            if moh_records:
+                st.info("🔎 **התרופה אותרה במאגר התרופות הרשמי של משרד הבריאות:**")
+                for rec in moh_records:
+                    brand = rec.get("DRUG_NAME") or rec.get("DRUG_ENGLISH_NAME") or search_query
+                    generic = rec.get("DRUG_GENERIC_NAME") or ""
+                    form = rec.get("DOSAGE_FORM") or "לא צוין"
+                    
+                    st.warning(
+                        f"💊 **{brand}** ({generic})\n\n"
+                        f"**צורת מתן רשומה:** {form}\n\n"
+                        f"⚠️ **סטטוס קליני:** `missing basic information`\n\n"
+                        f"*התרופה רשומה בישראל, אך טרם הוגדרה לגביה הנחיית כתישה מאומתת בבסיס הנתונים. יש להיוועץ ברוקח/ת.*"
+                    )
+            else:
+                st.warning("missing basic information (התרופה לא נמצאה במאגר המקומי או בסיס הנתונים)")
+
 except Exception as e:
     st.error("אירעה שגיאה בטעינת המידע.")
 
