@@ -16,25 +16,29 @@ def load_data():
 
 def search_moh_api(query):
     """
-    שאילתה מורחבת ל-API הממשלתי (data.gov.il) עם המרה ל-UPPERCASE
-    וחיפוש גמיש בשדות השונים כדי להבטיח שליפה מלאה
+    שאילתה מורחבת ל-API הממשלתי (data.gov.il) הפונה גם לחיפוש כללי 
+    וגם לחיפוש לפי שדות חומר פעיל ושם מסחרי
     """
     api_url = "https://data.gov.il/api/3/action/datastore_search"
     resource_id = "36bf15b0-30b0-4973-a2ab-323871239c3e" 
-    
     clean_query = query.strip().upper()
     
-    # ניסיון 1: חיפוש טקסט חופשי כללי בשרת הממשלתי
-    params = {
-        "resource_id": resource_id,
-        "q": clean_query,
-        "limit": 5
-    }
-    
+    # 1. ניסיון חיפוש חופשי
     try:
-        response = requests.get(api_url, params=params, timeout=5)
-        if response.status_code == 200:
-            records = response.json().get("result", {}).get("records", [])
+        res = requests.get(api_url, params={"resource_id": resource_id, "q": clean_query, "limit": 10}, timeout=4)
+        if res.status_code == 200:
+            records = res.json().get("result", {}).get("records", [])
+            if records:
+                return records
+    except Exception:
+        pass
+
+    # 2. ניסיון חיפוש ממוקד במידה וחיפוש חופשי לא החזיר תוצאה
+    try:
+        filters = f'{{"DRUG_GENERIC_NAME": "{clean_query}"}}'
+        res = requests.get(api_url, params={"resource_id": resource_id, "filters": filters, "limit": 10}, timeout=4)
+        if res.status_code == 200:
+            records = res.json().get("result", {}).get("records", [])
             if records:
                 return records
     except Exception:
