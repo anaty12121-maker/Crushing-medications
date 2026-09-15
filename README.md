@@ -1,87 +1,94 @@
-Generic Name,Brand Name,Can Crush?,Category,Notes / Source
-Dabigatran Etexilate,Pradaxa 75mg/110mg/150mg,No,FORBIDDEN_CRITICAL,"DO NOT open, crush, or chew capsules. Bioavailability increases by 75% when capsule is opened, significantly increasing hemorrhage risk. (Micromedex / Open Evidence)"
-Pyridostigmine Bromide,Mestinon 60mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed or split for immediate administration (bitter taste). (Micromedex / Open Evidence)"
-Linagliptin,Trajenta 5mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed or split. (Micromedex)"
-Sitagliptin,Januvia 25mg/50mg/100mg,Yes,ALLOWED,"Film-coated immediate-release tablet. Can be crushed. (Micromedex)"
-Sitagliptin / Metformin HCl,Janumet / Janumet XR 50/800mg / 50/1000mg,Depends on formulation,ENTERIC_COATED,"Janumet IR (film-coated) can be crushed if necessary. Janumet XR (extended-release) MUST NOT be crushed or chewed. (Micromedex)"
-Alfluzosin HCl,Xatral XL 10mg,No,FORBIDDEN_CRITICAL,"Modified-release tablet. Do not crush, chew or divide. (Micromedex)"
-Zolpidem Tartrate,Ambien CR,No,FORBIDDEN_CRITICAL,"Controlled-release tablet. Crushing destroys controlled-release mechanism. (Micromedex)"
-Carbamazepine,Tegretol CR / Teril CR 400mg,No,FORBIDDEN_CRITICAL,"Controlled-release formulation. Do not crush or chew. (Micromedex)"
-Dutasteride / Tamsulosin,Duodart 0.5mg/0.4mg,No,FORBIDDEN_CRITICAL,"Do NOT crush or open. Dutasteride causes oral mucosal irritation & absorbed transdermally. Tamsulosin is modified-release. (Micromedex)"
-Dutasteride,Avodart 0.5mg,No,FORBIDDEN_CRITICAL,"Soft gelatin capsule. Contents irritate oropharyngeal mucosa. (Micromedex)"
-Bisacodyl,Laxadin 5mg,No,ENTERIC_COATED,"Enteric-coated tablet. Crushing causes gastric irritation. (Micromedex)"
-Esomeprazole,Nexium 20mg/40mg,No (Tablet) / Open Only,ENTERIC_COATED,"Enteric-coated pellets. Do not crush pellets. (Micromedex)"
-Omeprazole,Losec / Omepra / Omepredex 20mg/40mg,No (Tablet) / Open Only,ENTERIC_COATED,"Enteric-coated pellets. Do not crush pellets. (Micromedex)"
-Pantoprazole,Controloc 40mg,No,ENTERIC_COATED,"Enteric-coated tablet. Do not crush, chew, or divide. (Micromedex)"
-Aspirin,Cartia / Micropirin / Godamed 100mg,No,ENTERIC_COATED,"Enteric-coated formulation to protect gastric mucosa. (Micromedex)"
-Pentoxifylline,Oxopurine 400mg,No,FORBIDDEN_CRITICAL,"Extended-release tablet. Do not crush or chew. (Micromedex)"
-Tamsulosin,Omnic 0.4mg,No (Open capsule allowed),FORBIDDEN_CRITICAL,"Modified-release pellets. Do not crush pellets. (Micromedex)"
-Bupropion HCl,Wellbutrin XR 150mg,No,FORBIDDEN_CRITICAL,"Extended-release tablet. Crushing causes seizure risk. (Micromedex)"
-Risedronate Sodium,Ribone 150mg,No,FORBIDDEN_CRITICAL,"Bisphosphonate. Must be swallowed whole. (Micromedex)"
-Aledronate Sodium,Fosalan / Maxibone 70mg,No,FORBIDDEN_CRITICAL,"Bisphosphonate. Crushing causes mucosal irritation. (Micromedex)"
-Ferrous Sulphate,Tardyferon 80mg,No,FORBIDDEN_CRITICAL,"Prolonged-release enteric-coated tablet. (Micromedex)"
-Paracetamol,Acamol / Abrol / Supramol 500mg,Yes,ALLOWED,"Standard immediate-release tablet. Can be crushed. (Micromedex)"
-Dipyrone,Optalgin / Phanalgin 500mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Amlodipine,Norvasc 5mg/10mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Amlodipine / Valsartan,Exforge / Duplex 10/160mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Atenolol,Normiten / Normalol 25mg/50mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Bisoprolol,Cardiloc / Concor 1.25mg/2.5mg/5mg/10mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Furosemide,Fusid 40mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Spironolactone,Aldospirone 25mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Metformin HCl,Glucomin 850mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Diazepam,Assival / Valium 2mg/5mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Lorazepam,Lorivan 1mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Clonazepam,Clonex 0.5mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
-Oxazepam,Vaben 10mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Prednisone,Prednisone 20mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Baclofen,Baclosal 10mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Captopril,Capoten / Aceril 12.5mg/25mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Levothyroxine Sodium,Eltroxin / Euthyrox 50mcg/100mcg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Digoxin,Lanoxin 0.25mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
-Haloperidol,Haldol 1mg/5mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Propranolol,Deralin / Prolol 10mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Sertraline,Lustral / Serenada 50mg/100mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Paroxetine,Seroxat / Paxxet 20mg,Yes,ALLOWED,"Scored film-coated tablet. Can be crushed. (Micromedex)"
-Fluoxetine,Prizma / Flutine 20mg,Yes (Capsule open),ALLOWED,"Capsule can be opened and mixed. (Micromedex)"
-Quetiapine,Seroquel 25mg/100mg,Yes,ALLOWED,"Immediate-release film-coated tablet. Can be crushed. (Micromedex)"
-Olanzapine,Zyprexa 5mg,Yes,ALLOWED,"Immediate-release film-coated tablet. Can be crushed. (Micromedex)"
-Risperidone,Risperdal 1mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Memantine HCl,Ebixa / Memox 10mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Donepezil HCl,Aricept 5mg/10mg,Yes,ALLOWED,"Immediate-release film-coated tablet. Can be crushed. (Micromedex)"
-Levodopa / Carbidopa,Sinemet 200mg/50mg / Dopicar,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Apixaban,Eliquis 2.5mg/5mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Clopidogrel,Plavix 75mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Dipyridamole,Cardoxin Forte 75mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Atorvastatin,Lipitor 10mg/20mg/40mg/80mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Simvastatin,Simovil / Simvacor 20mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Pravastatin,Lipidal 10mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Ezetimibe,Ezetrol 10mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Ezetimibe / Atorvastatin,Atozet 10mg/80mg,Yes,ALLOWED,"Immediate-release film-coated tablet. Can be crushed. (Micromedex)"
-Augmentin,Augmentin 875mg,Yes,ALLOWED,"Film-coated scored tablet. Can be crushed. (Micromedex)"
-Cephalexin,Keflex / Ceforal 250mg,Yes,ALLOWED,"Immediate-release capsule. Can be opened. (Micromedex)"
-Fluconazole,Trican / Flucanol 200mg,Yes (Capsule open),ALLOWED,"Capsule can be opened. (Micromedex)"
-Nitrofurantoin,Macrodantin 100mg,Yes (Capsule open),ALLOWED,"Capsule can be opened. (Micromedex)"
-Ramipril,Tritace / Ramitens 1.25mg/2.5mg/5mg,Yes,ALLOWED,"Capsule can be opened / Scored tablet crushed. (Micromedex)"
-Candesartan,Atacand 8mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
-Candesartan / Hydrochlorothiazide,Candor Plus 16/12.5mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
-Valsartan,Diovan 160mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Valsartan / Hydrochlorothiazide,Vector 160/12.5mg,Yes,ALLOWED,"Immediate-release tablet. Can be crushed. (Micromedex)"
-Dapagliflozin,Forxiga 10mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Empagliflozin,Jardiance 10mg/25mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Empagliflozin / Metformin,Jardiance Duo 5/1000mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Lercanidipine,Vasodip 10mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
-Doxazosin,Cadex / Cardoral 2mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Clotiapine,Entumin 40mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
-Tramadol HCl,Tramal 50mg,Yes (Capsule open),ALLOWED,"Immediate-release capsule. Can be opened. (Micromedex)"
-Trazodone,Trazodil 50mg/100mg,Yes,ALLOWED,"Immediate-release scored tablet. Can be crushed. (Micromedex)"
-Duloxetine,Cymbalta 30mg/60mg,No (Open capsule allowed),ENTERIC_COATED,"Enteric-coated pellets inside capsule. Do NOT crush pellets. (Micromedex)"
-Pregabalin,Lyrica 50mg/75mg/100mg/150mg,Yes (Capsule open),ALLOWED,"Immediate-release capsule. Can be opened. (Micromedex)"
-Mirtazapine,Remeron / Miro 30mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Rosuvastatin,Crestor 20mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Ursodeoxycholic Acid,Ursolit 300mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
-Zopiclone,Imovane / Nocturno 3.75mg/7.5mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Lacosamide,Vimpat 50mg/200mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Levetiracetam,Keppra 250mg/50mg,Yes,ALLOWED,"Film-coated tablet. Can be crushed. (Micromedex)"
-Brotizolam,Bondormin 0.25mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
-Midodrine HCl,Gutron 5mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
-Fludrocortisone,Florinef / Astonin 0.1mg,Yes,ALLOWED,"Scored tablet. Can be crushed. (Micromedex)"
+import streamlit as st
+import pandas as pd
+import requests
+
+st.set_page_config(
+    page_title="מנוע חיפוש כתישת תרופות",
+    page_icon="💊",
+    layout="centered"
+)
+
+@st.cache_data(ttl=60)
+def load_data():
+    url = "https://raw.githubusercontent.com/anaty12121-maker/Crushing-medications/main/medications.csv"
+    df = pd.read_csv(url)
+    return df
+
+def search_moh_api(query):
+    """
+    פנייה ל-API הממשלתי (data.gov.il) במידה והתרופה לא נמצאה ב-CSV המקומי
+    """
+    api_url = "https://data.gov.il/api/3/action/datastore_search"
+    resource_id = "36bf15b0-30b0-4973-a2ab-323871239c3e" 
+    params = {
+        "resource_id": resource_id,
+        "q": query,
+        "limit": 5
+    }
+    try:
+        response = requests.get(api_url, params=params, timeout=3)
+        if response.status_code == 200:
+            data = response.json()
+            records = data.get("result", {}).get("records", [])
+            return records
+    except Exception:
+        pass
+    return []
+
+st.title("💊 מנוע חיפוש והנחיות לכתישת תרופות")
+
+try:
+    df = load_data()
+    search_query = st.text_input("הקלידי שם תרופה (מסחרי או גנרי):", "").strip()
+    
+    if search_query:
+        # 1. חיפוש במאגר המאומת המקומי (medications.csv)
+        results = df[
+            df['Brand Name'].str.contains(search_query, case=False, na=False) |
+            df['Generic Name'].str.contains(search_query, case=False, na=False)
+        ]
+        
+        if not results.empty:
+            for _, row in results.iterrows():
+                category = row.get('Category', '')
+                notes = row.get('Notes / Source', 'missing basic information')
+                
+                if category == 'FORBIDDEN_CRITICAL':
+                    st.error(f"❌ **{row['Brand Name']}** ({row['Generic Name']})\n\n**אסור לכתוש!**\n\n**הנחיות ומקור:** {notes}")
+                elif category == 'ENTERIC_COATED':
+                    st.warning(f"⚠️ **{row['Brand Name']}** ({row['Generic Name']})\n\n**ציפוי אנטרי / פתיחה בלבד**\n\n**הנחיות ומקור:** {notes}")
+                elif category == 'ALLOWED':
+                    st.success(f"✅ **{row['Brand Name']}** ({row['Generic Name']})\n\n**מותר לכתוש**\n\n**הנחיות ומקור:** {notes}")
+                else:
+                    st.info(f"ℹ️ **{row['Brand Name']}** ({row['Generic Name']})\n\n**מידע:** {notes}")
+        else:
+            # 2. אם לא נמצא ב-CSV המקומי - בדיקה אוטומטית ב-API של משרד הבריאות
+            moh_records = search_moh_api(search_query)
+            
+            if moh_records:
+                st.info("🔎 **התרופה אותרה במאגר התרופות הרשמי של משרד הבריאות:**")
+                for rec in moh_records:
+                    brand = rec.get("DRUG_NAME", rec.get("DRUG_ENGLISH_NAME", search_query))
+                    generic = rec.get("DRUG_GENERIC_NAME", "")
+                    form = rec.get("DOSAGE_FORM", "")
+                    
+                    st.warning(
+                        f"💊 **{brand}** ({generic})\n\n"
+                        f"**צורת מתן רשומה:** {form}\n\n"
+                        f"⚠️ **סטטוס קליני:** `missing basic information`\n\n"
+                        f"*התרופה רשומה בישראל, אך טרם הוגדרה לגביה הנחיית כתישה מאומתת במאגר. יש להיוועץ ברוקח/ת.*"
+                    )
+            else:
+                st.warning("missing basic information (התרופה לא נמצאה במאגר המקומי או בסיס הנתונים)")
+
+except Exception as e:
+    st.error("אירעה שגיאה בטעינת המידע.")
+
+st.markdown("---")
+st.markdown(
+    "<div style='text-align: center; color: gray; font-size: 0.85em;'>"
+    "נבנה על ידי ענת יהלום, רוקחת בבתי אבות | סיוע בפיתוח טכני: AI<br>"
+    "<i>⚠️ <b>הבהרה משפטית:</b> המידע מיועד לסיוע ואינו מחליף שיקול דעת מקצועי, עלון לרופא או היוועצות ברוקח/ת. המאגר מתבסס על מקורות מורשים (Micromedex, Open Evidence, עלוני משרד הבריאות).</i>"
+    "</div>",
+    unsafe_allow_html=True
+)
